@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zad1.Publisher">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Button fx:id="publishButton" layoutX="379.0" layoutY="79.0" mnemonicParsing="false" onAction="#publish" prefHeight="25.0" prefWidth="70.0" text="Opublikuj" textAlignment="JUSTIFY" />
+                <Button fx:id="unpublishButton" layoutX="379.0" layoutY="128.0" mnemonicParsing="false" onAction="#unpublish" prefHeight="25.0" prefWidth="70.0" text="Wycofaj publikację" />
+                <TextField fx:id="topicField" layoutX="160.0" layoutY="79.0" prefHeight="25.0" prefWidth="200.0" promptText="Wpisz temat" />
+                <ListView fx:id="topicView" layoutX="160.0" layoutY="116.0" prefHeight="168.0" prefWidth="200.0" />
+                <TextField fx:id="messageField" layoutX="160.0" layoutY="297.0" prefHeight="25.0" prefWidth="200.0" promptText="Wpisz wiadomość" />
+                <Button fx:id="sendButton" layoutX="379.0" layoutY="297.0" mnemonicParsing="false" onAction="#send" prefHeight="25.0" prefWidth="70.0" text="Wyślij" textAlignment="JUSTIFY" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

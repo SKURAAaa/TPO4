@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zad1.Client">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+            <children>
+                <!-- Widok dostępnych tematów -->
+                <ListView fx:id="availableView" layoutX="17.0" layoutY="23.0" prefHeight="289.0" prefWidth="82.0" />
+
+                <!-- Przyciski subskrypcji i anulowania subskrypcji -->
+                <Button fx:id="subscribeButton" layoutX="17.0" layoutY="320.0" mnemonicParsing="false" onAction="#subscribe" prefHeight="25.0" prefWidth="82.0" text="Subskrybuj" />
+                <Button fx:id="unsubscribeButton" layoutX="108.0" layoutY="320.0" mnemonicParsing="false" onAction="#unsubscribe" text="Anuluj subskrypcję" />
+
+                <!-- Widok subskrybowanych tematów -->
+                <ListView fx:id="subscribedView" layoutX="108.0" layoutY="23.0" prefHeight="289.0" prefWidth="82.0" />
+
+                <!-- Obszar tekstowy do wyświetlania wiadomości -->
+                <TextArea fx:id="messageArea" editable="false" layoutX="220.0" layoutY="23.0" prefHeight="289.0" prefWidth="375.0" />
+
+                <!-- Pole tekstowe do wyświetlania przychodzących wiadomości -->
+                <TextField fx:id="messageField" editable="false" layoutX="220.0" layoutY="320.0" prefHeight="25.0" prefWidth="375.0" promptText="Nowa wiadomość" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
